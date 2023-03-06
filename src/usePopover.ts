@@ -71,7 +71,7 @@ export const usePopover = ({
         const left = Math.round(parentRect.left + inputLeft - scoutRect.left);
         const top = Math.round(parentRect.top + inputTop - scoutRect.top);
 
-        popoverRef.current.style.top = `${top}px)`;
+        popoverRef.current.style.top = `${top}px`;
         popoverRef.current.style.left = `${left}px`;
 
         onPositionPopover({
@@ -136,7 +136,7 @@ export const usePopover = ({
       finalTop = Math.round(finalTop - scoutRect.top);
       finalLeft = Math.round(finalLeft - scoutRect.left);
 
-      popoverRef.current.style.top = `${finalTop}px)`;
+      popoverRef.current.style.top = `${finalTop}px`;
       popoverRef.current.style.left = `${finalLeft}px`;
 
       const potentialViolations: BoundaryViolations = {
